@@ -47,9 +47,9 @@ const NumberInput: React.FC<NumberInputProps> = ({
             href={externalLink.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 text-[10px] text-blue-500 hover:text-blue-600 hover:underline mb-1 w-fit transition-colors"
+            className="flex items-center gap-1 text-[14px] text-blue-500 hover:text-blue-600 hover:underline mb-1 w-fit transition-colors"
           >
-            <ExternalLink size={10} />
+            <ExternalLink size={14} />
             <span>{externalLink.text}</span>
           </a>
         )}
