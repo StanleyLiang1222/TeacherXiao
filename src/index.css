@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Serif+TC:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Noto Serif TC", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --text-xs: 0.95rem;
+  --text-sm: 1.075rem;
+  --text-base: 1.2rem;
+  --text-lg: 1.325rem;
+  --text-xl: 1.45rem;
+  --text-2xl: 1.7rem;
+  --text-3xl: 2.075rem;
+  --text-4xl: 2.45rem;
+  --text-5xl: 3.2rem;
+}
+
+@layer base {
+  a {
+    font-size: calc(1em + 0.2em);
+  }
+}
+
