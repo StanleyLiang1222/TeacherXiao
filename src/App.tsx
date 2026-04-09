@@ -172,7 +172,7 @@ export default function EstateTaxCalculator() {
                       value={assets.stockListed}
                       onChange={(val) => handleAssetChange('stockListed', val)}
                       theme={theme}
-                      externalLink={{ text: "證交所行情查詢", url: "https://www.twse.com.tw/zh/trading/historical/stock-day-avg.html" }}
+                      externalLink={{ text: "台灣證券交易所-個股日收盤價", url: "https://www.twse.com.tw/zh/trading/historical/stock-day-avg.html" }}
                     />
                     <NumberInput
                       label="上櫃 OTC"
@@ -180,7 +180,7 @@ export default function EstateTaxCalculator() {
                       value={assets.stockOTC}
                       onChange={(val) => handleAssetChange('stockOTC', val)}
                       theme={theme}
-                      externalLink={{ text: "櫃買中心查詢", url: "https://share.google/XqiUGPNeKTTNusbHQ" }}
+                      externalLink={{ text: "證券櫃檯買賣中心-上櫃股票行情", url: "https://share.google/XqiUGPNeKTTNusbHQ" }}
                     />
                   </div>
                 </div>
@@ -191,7 +191,11 @@ export default function EstateTaxCalculator() {
                   value={assets.stockEmerging}
                   onChange={(val) => handleAssetChange('stockEmerging', val)}
                   theme={theme}
-                  externalLink={{ text: "興櫃行情查詢", url: "https://share.google/EVXjepOyJhcE4bKWz" }}
+                  externalLink={{ text: "證券櫃檯買賣中心-興櫃股票行情", url: "https://share.google/EVXjepOyJhcE4bKWz" }}
+                  tooltip={{
+                    label: "計算公式說明",
+                    content: ["計算公式：平均成交價=總成交總額/總成交股數"]
+                  }}
                 />
 
                 <NumberInput
