@@ -105,14 +105,14 @@ export default function EstateTaxCalculator() {
   return (
     <div className={`min-h-screen transition-colors duration-500 ${theme.bg} ${theme.font} pb-32 lg:pb-10`}>
       <header className="pt-8 pb-6 px-6 text-center">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="inline-flex items-center gap-2 mb-2 opacity-60"
         >
           <span className="text-xs font-bold tracking-[0.2em] uppercase">Taiwan Tax 2026</span>
         </motion.div>
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -127,7 +127,7 @@ export default function EstateTaxCalculator() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Left Column: Inputs */}
           <div className="lg:col-span-7 space-y-6">
-            
+
             {/* Asset Section */}
             <section className={`p-6 md:p-8 ${theme.card}`}>
               <div className="flex items-center justify-between mb-6">
@@ -139,7 +139,7 @@ export default function EstateTaxCalculator() {
                 </div>
                 <div className="text-right">
                   <div className={`text-xs ${theme.textSub}`}>Total Summary</div>
-                  <motion.div 
+                  <motion.div
                     key={totalAssets}
                     initial={{ scale: 1.1 }}
                     animate={{ scale: 1 }}
@@ -270,7 +270,7 @@ export default function EstateTaxCalculator() {
                 theme={theme}
                 icon={Heart}
               />
-              
+
               <Counter
                 label="成年直系卑親屬"
                 subLabel="每人扣除 56 萬"
@@ -290,7 +290,7 @@ export default function EstateTaxCalculator() {
               >
                 <AnimatePresence>
                   {deductions.childrenMinorAges.length > 0 && (
-                    <motion.div 
+                    <motion.div
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
@@ -353,7 +353,7 @@ export default function EstateTaxCalculator() {
               >
                 <AnimatePresence>
                   {deductions.dependentMinorSiblingAges.length > 0 && (
-                    <motion.div 
+                    <motion.div
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
@@ -430,7 +430,7 @@ export default function EstateTaxCalculator() {
               <TaxBracketTable theme={theme} />
 
               <div className="text-center text-[0.75rem] opacity-40 mt-4">
-                試算結果僅供參考，實際稅額以國稅局核定為準。<br/>
+                試算結果僅供參考，實際稅額以國稅局核定為準。<br />
                 Designed for 2026 Taiwan Tax Regulations.
               </div>
             </div>
@@ -439,8 +439,7 @@ export default function EstateTaxCalculator() {
       </main>
 
       {/* Mobile Sticky Footer */}
-      <div className={`fixed bottom-0 left-0 w-full lg:hidden z-50 p-4 pb-6 backdrop-blur-xl border-t ${
-        themeId === 'modern' ? 'bg-white/90 border-slate-200' : 
+      <div className={`fixed bottom-0 left-0 w-full lg:hidden z-50 p-4 pb-6 backdrop-blur-xl border-t ${themeId === 'modern' ? 'bg-white/90 border-slate-200' :
         themeId === 'classic' ? 'bg-[#F5F5F0]/95 border-stone-300' : 'bg-emerald-50/95 border-emerald-100'
         } shadow-[0_-4px_20px_rgba(0,0,0,0.1)]`}
       >
