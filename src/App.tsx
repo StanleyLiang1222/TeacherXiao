@@ -378,7 +378,7 @@ export default function EstateTaxCalculator() {
 
               <CardInput
                 label="負債"
-                subLabel="死亡前未償債務"
+                subLabel="死亡前未償債務，具有確實證明者"
                 value={deductions.liabilities}
                 onChange={(val) => handleDeductionChange('liabilities', val)}
                 theme={theme}
